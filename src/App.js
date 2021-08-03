@@ -1,10 +1,9 @@
-import React from "react";
-import { NavBar } from "./componentes/navBar";
+import {NavBar} from "./componentes/navBar";
 
 function App () {
     return (
-        <div>
-            <NavBar></NavBar>
+        <div className="App">
+            <NavBar/>
         </div>
     );
 }

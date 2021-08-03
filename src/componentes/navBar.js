@@ -1,12 +1,12 @@
 import React from "react";
-import { Nav, NavBar, NavDropdown, Container, Navbar } from "react-bootstrap";
+import { Nav, Navbar, NavDropdown, Container} from "react-bootstrap";
 
 export const NavBar = () => {
     return (
         <div>
             <Navbar bg="light" expand="lg">
                 <Container>
-                    <Navbar.Brand href="#home">Brand-Store</Navbar.Brand>
+                    <Navbar.Brand href="#home">RPA-APP</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
@@ -16,8 +16,7 @@ export const NavBar = () => {
                         <NavDropdown.Item href="#action/3.1">Item1</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">Item2</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.3">Item3</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.4">Item4</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                     </Navbar.Collapse>
@@ -27,4 +26,3 @@ export const NavBar = () => {
     );
 }
 
-export default NavBar;
