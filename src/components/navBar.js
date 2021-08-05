@@ -1,11 +1,13 @@
 import React from "react";
 import { Nav, Navbar, NavDropdown, Container} from "react-bootstrap";
+import IconFunction from "./CartWidget";
 
 export const NavBar = () => {
     return (
         <div>
             <Navbar bg="light" expand="lg">
                 <Container>
+                    <IconFunction /> 
                     <Navbar.Brand href="#home">RPA-APP</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
