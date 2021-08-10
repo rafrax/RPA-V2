@@ -5,7 +5,7 @@ function App () {
     return (
         <div className="App">
             <NavBar/>
-            <ItemFunction Texto="Esta sera un componente de lista"/>
+            <ItemFunction Texto="Carro de compras"/>
         </div>
     );
 }
