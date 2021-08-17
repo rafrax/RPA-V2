@@ -1,7 +1,7 @@
 import React from 'react';
 import { Basket2 } from 'react-bootstrap-icons';
 
-function IconFunction() {
+function CartWidget() {
     return (
         <span>
             <Basket2 color="royalblue" 
@@ -11,4 +11,4 @@ function IconFunction() {
     );
 }
 
-export default IconFunction;
+export default CartWidget;

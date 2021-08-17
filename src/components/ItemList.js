@@ -1,38 +1,38 @@
 import React, { useState } from 'react'
-import Movie from './Item';
+import Item from './Item';
+import ItemDetailContainer from './ItemDetailContainer';
+import ItemCount from './ItemCount';
 
+const Itemlist = () => {
+    const [movies, setMovies] = React.useState([]);
 
-const Movies = () => {
-    const [movies, setMovie] = useState([
-        {
-            id:1,
-            nombre: "Los Vengadores",
-            tipo: "Accion",
-            img:"https://i.pinimg.com/originals/3e/00/91/3e00913037297f57c7fd25502e555d2b.png"
-        },
-        {
-            id:2,
-            nombre: "Los Vengadores",
-            tipo: "Accion",
-            img:"https://i.pinimg.com/originals/3e/00/91/3e00913037297f57c7fd25502e555d2b.png"
-        }
-    ]);
-    
+    const cargarMovies = () => {
+    const promesaCargarProducto = new Promise((resolve) => setTimeout(() => {
+        resolve([
+            {
+                id:1,
+                nombre: "Los Vengadores",
+                tipo: "Accion",
+                img:"https://i.pinimg.com/originals/3e/00/91/3e00913037297f57c7fd25502e555d2b.png"
+            }
+        ]);
+    }, 2000)
+    );
+
+    promesaCargarProducto.then(res => {
+        setMovies(res);
+    });
+};
+
+cargarMovies();
+
     return (
         <div className='center_div'>
-            {movies.map(movie =>{
-                return(
-                <Movie 
-                id={movie.id} 
-                nombre={movie.nombre}
-                img={movie.img} 
-                tipo={movie.tipo}
-                />
-                )
-            })
-            }
+            {movies.map(item => <Item key={item.id} nombre={item.nombre} tipo={item.tipo} img={item.img} />) } 
+            <ItemDetailContainer/>
+            
         </div>
     )
 }
 
-export default Movies;
+export default Itemlist;

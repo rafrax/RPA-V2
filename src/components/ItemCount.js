@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import './styles/BuyCart.css';
-import './styles/ButtonBlue.css';
+import './styles/App.css';
+import './styles/App.css';
 
 const ItemCount = ({stock, initial, onAdd}) => {
     const [num, setNum] = useState (initial);
@@ -25,7 +25,7 @@ const ItemCount = ({stock, initial, onAdd}) => {
     }
     return (
         <>
-        <div className='center_div'>
+        <div>
             <h1>{num}</h1>
             <div>
                 <button onClick={decNum} className= 'button_blue'> Eliminar </button>

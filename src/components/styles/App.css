@@ -25,3 +25,9 @@
 img {
     width: 20vh ;
 }
+
+.movie_card {
+    border: solid 1px;
+    padding: auto;
+    margin: 10px;
+}
