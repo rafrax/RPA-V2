@@ -19,7 +19,7 @@ export const NavBar = () => {
                         <LinkContainer to="/">
                             <Nav.Link href="#link">Todas</Nav.Link>
                         </LinkContainer>
-                        <LinkContainer to="/">
+                        <LinkContainer to="/Estrenos/id=1">
                             <Nav.Link href="#link">Estrenos</Nav.Link>
                         </LinkContainer>
                         <LinkContainer to="/FAQ">

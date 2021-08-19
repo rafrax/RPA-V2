@@ -3,79 +3,79 @@
     "nombre": "FREE GUY: TOMANDO EL CONTROL",
     "tipo": "Comedia",
     "estilo": "TE +7",
-    "precio": "200",
-    "imagenURL": "https://cdn.apis.cineplanet.cl/CDN/media/entity/get/FilmPosterGraphic/HO00000656?referenceScheme=HeadOffice&allowPlaceHolder=true",
-    "max": 10,
-    "cantidad": "1"
+    "precio": "4500 CLP",
+    "imagen": "https://cdn.apis.cineplanet.cl/CDN/media/entity/get/FilmPosterGraphic/HO00000656?referenceScheme=HeadOffice&allowPlaceHolder=true",
+    "stock": 5,
+    "inicial": 1
 },
 {
     "id": "2",
     "nombre": "NO RESPIRES 2",
     "tipo": "Thriller",
     "estilo": "+14",
-    "precio": "200",
-    "imagenURL": "https://cdn.apis.cineplanet.cl/CDN/media/entity/get/FilmPosterGraphic/HO00000668?referenceScheme=HeadOffice&allowPlaceHolder=true",
-    "max": 10,
-    "cantidad": "1"
+    "precio": "4800 CLP",
+    "imagen": "https://cdn.apis.cineplanet.cl/CDN/media/entity/get/FilmPosterGraphic/HO00000668?referenceScheme=HeadOffice&allowPlaceHolder=true",
+    "stock": 12,
+    "inicial": 1
 },
 {
     "id": "3",
     "nombre": "BLACK WIDOW",
     "tipo": "Acción",
     "estilo": "+14",
-    "precio": "200",
-    "imagenURL": "https://cdn.apis.cineplanet.cl/CDN/media/entity/get/FilmPosterGraphic/HO00000650?referenceScheme=HeadOffice&allowPlaceHolder=true",
-    "max": 10,
-    "cantidad": "1"
+    "precio": "4500 CLP",
+    "imagen": "https://cdn.apis.cineplanet.cl/CDN/media/entity/get/FilmPosterGraphic/HO00000650?referenceScheme=HeadOffice&allowPlaceHolder=true",
+    "stock": 10,
+    "inicial": 1
 },
 {
     "id": "4",
     "nombre": "EL CONJURO 3",
     "tipo": "Thriller",
     "estilo": "+14",
-    "precio": "200",
-    "imagenURL": "https://cdn.apis.cineplanet.cl/CDN/media/entity/get/FilmPosterGraphic/HO00000649?referenceScheme=HeadOffice&allowPlaceHolder=true",
-    "max": 10,
-    "cantidad": "1"
+    "precio": "5500 CLP",
+    "imagen": "https://cdn.apis.cineplanet.cl/CDN/media/entity/get/FilmPosterGraphic/HO00000649?referenceScheme=HeadOffice&allowPlaceHolder=true",
+    "stock": 20,
+    "inicial": 1
 },
 {
     "id": "5",
     "nombre": "El ESCUADRON SUICIDA",
     "tipo": "Acción",
     "estilo": "+14",
-    "precio": "200",
-    "imagenURL": "https://cdn.apis.cineplanet.cl/CDN/media/entity/get/FilmPosterGraphic/HO00000654?referenceScheme=HeadOffice&allowPlaceHolder=true",
-    "max": 10,
-    "cantidad": "1"
+    "precio": "4500 CLP",
+    "imagen": "https://cdn.apis.cineplanet.cl/CDN/media/entity/get/FilmPosterGraphic/HO00000654?referenceScheme=HeadOffice&allowPlaceHolder=true",
+    "stock": 14,
+    "inicial": 1
 },
 {
     "id": "6",
     "nombre": "RAMBO",
     "tipo": "Acción",
     "estilo": "+14",
-    "precio": "200",
-    "imagenURL": "https://cdn.apis.cineplanet.cl/CDN/media/entity/get/FilmPosterGraphic/HO00000506?referenceScheme=HeadOffice&allowPlaceHolder=true",
-    "max": 10,
-    "cantidad": "1"
+    "precio": "4500 CLP",
+    "imagen": "https://cdn.apis.cineplanet.cl/CDN/media/entity/get/FilmPosterGraphic/HO00000506?referenceScheme=HeadOffice&allowPlaceHolder=true",
+    "stock": 22,
+    "inicial": 1
 },
 {
     "id": "7",
     "nombre": "RAPIDOS Y FURIOSOS",
     "tipo": "Acción",
     "estilo": "+14",
-    "precio": "230",
-    "imagenURL": "https://cdn.apis.cineplanet.cl/CDN/media/entity/get/FilmPosterGraphic/HO00000626?referenceScheme=HeadOffice&allowPlaceHolder=true",
-    "max": 10,
-    "cantidad": "1"
+    "precio": "4900 CLP",
+    "imagen": "https://cdn.apis.cineplanet.cl/CDN/media/entity/get/FilmPosterGraphic/HO00000626?referenceScheme=HeadOffice&allowPlaceHolder=true",
+    "stock": 20,
+    "inicial": 1
 },
 {
     "id": "8",
     "nombre": "SPACE JAM",
     "tipo": "Acción",
     "estilo": "+14",
-    "precio": "320",
-    "imagenURL": "https://cdn.apis.cineplanet.cl/CDN/media/entity/get/FilmPosterGraphic/HO00000652?referenceScheme=HeadOffice&allowPlaceHolder=true",
-    "max": 10,
-    "cantidad": "1"
+    "precio": "4700 CLP",
+    "imagen": "https://cdn.apis.cineplanet.cl/CDN/media/entity/get/FilmPosterGraphic/HO00000652?referenceScheme=HeadOffice&allowPlaceHolder=true",
+    "stock": 21,
+    "inicial": 1
 }
 ]

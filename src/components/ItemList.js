@@ -18,7 +18,7 @@ function ItemList () {
     return (
         <>
             {items.map(producto => {
-                const { id, nombre, tipo, precio, imagenURL, max, cantidad } = producto;
+                const { id, nombre, tipo, precio, imagen, stock, inicial } = producto;
                 return (
                 <ItemCard
                     key={id}
@@ -26,9 +26,9 @@ function ItemList () {
                     nombre={nombre}
                     tipo={tipo}
                     precio={precio}
-                    imagenURL={imagenURL}
-                    max={max}
-                    cantidad={cantidad}/>
+                    imagen={imagen}
+                    stock={stock}
+                    inicial={inicial}/>
                     );
             })};
         </>

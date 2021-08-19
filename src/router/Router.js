@@ -4,16 +4,17 @@ import App from '../App';
 import ItemDetailContainer from '../components/ItemDetailContainer';
 import Error from '../components/Error';
 import Preguntas from '../components/Preguntas'
+import ItemListContainer from '../components/ItemListContainer';
 
 
 const Router = () => {
     return (
         <BrowserRouter>
             <Switch>
-                <Route exact path="/" component={App} />
+                <Route exact path="/" component={ItemListContainer} />
                 <Route path="/itemDetail/:id" component={ItemDetailContainer} />
                 <Route path="/Todas" component={App} />
-                <Route path="/Estrenos" component={App} />
+                <Route path="/Estrenos/:id" component={ItemListContainer} />
                 <Route path="/FAQ" component={Preguntas} />
                 <Route path="*" component={Error} />
             </Switch>

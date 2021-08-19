@@ -30,9 +30,9 @@ function ItemDetailContainer() {
                 nombre={items.nombre}
                 tipo={items.tipo}
                 precio={items.precio}
-                imagenURL={items.imagenURL}
-                max={items.max}
-                cantidad={items.cantidad}/>
+                imagen={items.imagen}
+                stock={items.stock}
+                inicial={items.inicial}/>
             </div>
         </div>
     );
