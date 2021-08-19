@@ -1,13 +1,13 @@
-import {NavBar} from "./components/navBar";
-import ItemFunction from './components/ItemListContainer'
+import React from 'react';
+import NavBar from './components/navBar';
+import ItemListContainer from './components/ItemListContainer';
 
 
-
-function App () {
-    return (
-        <div className="App">
-            <NavBar/>
-            <ItemFunction/>
+function App(){
+    return(
+        <div>
+            <NavBar />
+            <ItemListContainer />
         </div>
     );
 }

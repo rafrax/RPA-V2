@@ -1,0 +1,58 @@
+.body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h5 {
+    text-align: center;
+}
+
+
+.btnvar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btnvar p {
+    margin: auto 1rem;
+}
+
+
+.cardNombre {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+
+.cardPrecio {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.contenedor {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.dimg img {
+    width: 100%;
+}
+
+.dinf {
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.textPregunta {
+    font-size: medium;
+}

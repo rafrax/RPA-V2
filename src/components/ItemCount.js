@@ -1,40 +1,18 @@
-import React, { useState } from "react";
-import './styles/App.css';
-import './styles/App.css';
+import { React, useState } from 'react';
+import { Button } from 'react-bootstrap';
+import './styles/styles.css';
 
-const ItemCount = ({stock, initial, onAdd}) => {
-    const [num, setNum] = useState (initial);
-    
-    const incNum = () => {
-        if (num >= stock) {
-            setNum (stock)
-            alert ("Ha alcanzado el limite de stock")
-        } else {
-            setNum (num + onAdd)
-        }
-        
-    }
-
-    const decNum = () => {
-        if (num > 0) {
-            setNum (num - onAdd)
-        } else {
-            setNum(0)
-        }
-
-    }
+function ItemCount({ max, cantidad }) {
+    const [counter, setCounter] = useState(0);
     return (
-        <>
-        <div>
-            <h1>{num}</h1>
-            <div>
-                <button onClick={decNum} className= 'button_blue'> Eliminar </button>
-                <button onClick={incNum} className= 'button_blue'> Agregar </button>
-            </div>
-            <p>El stock disponible es <strong>{stock-num}</strong></p>
-        </div>
-        </>
-    )
+      <div className="btnvar">
+        <Button variant="primary" onClick={() => {if (counter > cantidad) { setCounter(counter - 1);}
+          }}>{" "}-{" "}</Button>
+        <p>{counter}</p>
+        <Button variant="primary" onClick={() => {if (counter < max) {setCounter(counter + 1);}
+          }}>+</Button>
+      </div>
+    );
 }
 
 export default ItemCount;

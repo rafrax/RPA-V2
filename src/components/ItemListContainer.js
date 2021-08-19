@@ -1,21 +1,18 @@
 import React from 'react';
-import Movies from './ItemList';
-// import ItemCount from './ItemCount'; 
+import ItemList from './ItemList';
+import './styles/styles.css';
 
-const ItemFunction = () => {
-        return <div>
-            {/* <div>
-            <p style={{textAlign: "center", marginTop: 100, borderStyle: "outset"}}>
-                {Texto}</p>
-                <ItemCount stock={10} initial={0} onAdd={1}/>
-            </div> */}
-            
+function ItemListContainer() {
+    return(
             <div>
-                <Movies/>
+                <h1>Elige tu pelicula!</h1>
+                <div className="container">
+                    <div className="row">
+                        <ItemList />
+                    </div>
+                </div>
             </div>
-            
-                
-            </div>
+    );
 }
 
-export default ItemFunction;
+export default ItemListContainer;

@@ -1,40 +1,42 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import NavBar from './navBar';
 import ItemDetail from './ItemDetail';
+import ListProducts from './productos.json'
 
-const ItemDetailContainer = () => {
-    const [movie, setMovie] = React.useState([]);
-    
-    const cargarMovie = () => {
-        const promesaCargarProducto = new Promise((resolve) => setTimeout(() => {
-            resolve([
-                {
-                    id:1,
-                    nombre: "Pelicula Detalle",
-                    tipo: "Accion",
-                    img:"https://i.pinimg.com/originals/3e/00/91/3e00913037297f57c7fd25502e555d2b.png"
-                }
-            ]);
-        }, 2000)
-        );
-    
-        promesaCargarProducto.then(res => {
-            setMovie(res);
-        });
-    };
-    
-    cargarMovie();
-    
-        return (
-            <div >
-                {movie.map(movie =>{
-                    return(
-                    <ItemDetail movie={movie}/>
-                    )
-                })
-                }
-                
-            </div>
-        )
+
+function ItemDetailContainer() {
+    const {id} = useParams();
+
+    const [items, setItems] = useState({});
+
+    const getItems = (ab) => {
+        const selected = ListProducts.find( (producto) => producto.id === ab)
+        setItems(selected);
     }
-    
-    export default ItemDetailContainer;
+
+    useEffect( () => {
+            getItems(id);
+        }
+    )
+
+    return (
+        <div>
+            <NavBar />
+            <div className="contenedor">
+            <ItemDetail 
+                key={items.id}
+                id={items.id}
+                nombre={items.nombre}
+                tipo={items.tipo}
+                precio={items.precio}
+                imagenURL={items.imagenURL}
+                max={items.max}
+                cantidad={items.cantidad}/>
+            </div>
+        </div>
+    );
+}
+
+
+export default ItemDetailContainer;

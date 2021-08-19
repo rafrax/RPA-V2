@@ -1,38 +1,37 @@
-import React, { useState } from 'react'
-import Item from './Item';
-import ItemDetailContainer from './ItemDetailContainer';
-import ItemCount from './ItemCount';
+import { React, useState, useEffect } from 'react';
+import ItemCard from './ItemCard';
+import ListProducts from './productos.json'
 
-const Itemlist = () => {
-    const [movies, setMovies] = React.useState([]);
 
-    const cargarMovies = () => {
-    const promesaCargarProducto = new Promise((resolve) => setTimeout(() => {
-        resolve([
-            {
-                id:1,
-                nombre: "Los Vengadores",
-                tipo: "Accion",
-                img:"https://i.pinimg.com/originals/3e/00/91/3e00913037297f57c7fd25502e555d2b.png"
-            }
-        ]);
-    }, 2000)
+function ItemList () {
+
+    const [items, setItems] = useState([]);
+    
+    useEffect(
+        () => {
+        setTimeout(async () => {
+            setItems(ListProducts);
+        }, 2000);
+        },
     );
 
-    promesaCargarProducto.then(res => {
-        setMovies(res);
-    });
-};
-
-cargarMovies();
-
     return (
-        <div className='center_div'>
-            {movies.map(item => <Item key={item.id} nombre={item.nombre} tipo={item.tipo} img={item.img} />) } 
-            <ItemDetailContainer/>
-            
-        </div>
-    )
+        <>
+            {items.map(producto => {
+                const { id, nombre, tipo, precio, imagenURL, max, cantidad } = producto;
+                return (
+                <ItemCard
+                    key={id}
+                    id={id}
+                    nombre={nombre}
+                    tipo={tipo}
+                    precio={precio}
+                    imagenURL={imagenURL}
+                    max={max}
+                    cantidad={cantidad}/>
+                    );
+            })};
+        </>
+    );
 }
-
-export default Itemlist;
+export default ItemList;
