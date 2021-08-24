@@ -5,6 +5,7 @@ import ItemDetailContainer from '../components/ItemDetailContainer';
 import Error from '../components/Error';
 import Preguntas from '../components/Preguntas'
 import ItemListContainer from '../components/ItemListContainer';
+import Cart from '../components/cart';
 
 
 const Router = () => {
@@ -16,6 +17,7 @@ const Router = () => {
                 <Route path="/Todas" component={App} />
                 <Route path="/Estrenos/:id" component={ItemListContainer} />
                 <Route path="/FAQ" component={Preguntas} />
+                <Route path="/Cart" component={Cart} />
                 <Route path="*" component={Error} />
             </Switch>
         </BrowserRouter>
