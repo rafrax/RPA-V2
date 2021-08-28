@@ -11,14 +11,13 @@ function ItemDetailContainer() {
     const [items, setItems] = useState({});
 
     const getItems = (ab) => {
-        const selected = ListProducts.find( (producto) => producto.id === ab)
+        const selected = ListProducts.find((producto)=>producto.id===ab)
         setItems(selected);
     }
 
     useEffect( () => {
             getItems(id);
-        }
-    )
+        }, [id]);
 
     return (
         <div>

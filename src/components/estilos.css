@@ -1,0 +1,89 @@
+.body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.estiloLogo {
+    background: #fff
+}
+
+.estiloCarrito {
+    background: #fff;
+    border-radius: 120px;
+}
+
+.navLinks {
+    margin-right: 1rem;
+}
+
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.botones p {
+    margin: auto 1rem;
+}
+
+.agregar {
+    margin: 1rem 2rem;
+    align-content: center;
+}
+
+.agregar:hover {
+    transform: scale(1.1);
+}
+
+.masInfo:hover {
+    transform: scale(1.1);
+}
+
+.cardTitulo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.cardSubtitulo {
+    font-size: 22px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.cardProductor {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.cardPrecio {
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+}
+
+.itemStock {
+    font-size: 14px;
+    color: grey;
+    text-align: center;
+}
+
+.tituloPpal {
+    font-size: 28px;
+    font-weight: 900;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.contenedor {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.itemDetail_img img {
+    width: 100%;
+}
+
+.itemDetail_info {
+    text-align: center;
+}

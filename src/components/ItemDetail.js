@@ -1,38 +1,42 @@
-import React from 'react';
-import { useState } from 'react';
-import { Button } from 'react-bootstrap';
+import React, { useState, useContext } from 'react';
 import ItemCount from './ItemCount';
 import './styles/styles.css';
-import { Comprar} from './Comprar';
 import { Link } from 'react-router-dom';
+import { Comprar } from './Comprar';
+import { CartContext } from './context/CartContext';
 
 
-function ItemDetail ({id, nombre, tipo, precio, imagen, stock, inicial}){
+function ItemDetail (item){
 
-    const [compras, setcompras] = useState(inicial);
-    const [mostrarBtn, setmostrarBtn] = useState(false);
-    const onAdd = (cant) => {
-        setcompras(cant);
+    const [compras, setcompras] = useState(0);
+    const [mostrarBtn, setmostrarBtn] = useState(false)
+    const { addItem } = useContext(CartContext);
+
+    const onAdd = (a) => {
+        setcompras(a);
         setmostrarBtn(true)
     }
 
+    const onComprar = (item, a) => {
+        addItem(item, a);
+    }
 
     return (
         <div className="row itemDetail align-middle">
             <div className="col-6 dimg">
-                <img  src={imagen} alt="Pelicula.jpg" />
+                <img src={item.imagen} alt="Pelicula.jpg" />
             </div>
             <div className="col-6 dinf my-auto">
-                <h1 className="cardTitulo">{nombre}</h1>
-                <h2 className="cardSubtitulo">{tipo}</h2>
-                <p className="cardPrecio">${precio}</p>
+                <h3 className="cardTitulo">{item.nombre}</h3>
+                <h4 className="cardSubtitulo">{item.tipo}</h4>
+                <p className="cardPrecio">${item.precio}</p>
                 <div className="align-self-center">
-                    
-                    {compras === 1 ? (
-                        <ItemCount stock={stock} inicial={inicial} onAdd={onAdd}/>
+
+                {compras === 0 ? (
+                        <ItemCount stock={item.stock} inicial={item.inicial} onAdd={onAdd} />
                     ): (
                         compras >= 1 && mostrarBtn && <Link to="/cart" > 
-                        <Comprar cant={compras}/> </Link>
+                        <Comprar cant={compras} item={item} onAgregar={onComprar}/> </Link>
                         
                         )}
                 </div>
