@@ -1,14 +1,18 @@
-import React from 'react';
-import './styles/styles.css';
-import NavBar from './navBar';
+import React from "react";
+import { useContext } from "react";
+import { CartContext } from "./context/CartContext";
+import NavBar from "./navBar";
 
-function Cart() {
+const Cart = () => {
+    const cart = useContext(CartContext);
+    console.log('cart', cart)
+
     return(
-            <div>
+        <div>
                 <div> <NavBar /></div>
                 <h1>No mostrar nada</h1>
-            </div>
+        </div>
     );
 }
 
-export default Cart;
+export default Cart

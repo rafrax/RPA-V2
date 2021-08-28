@@ -1,5 +1,6 @@
 import React from 'react';
-import { Nav, Navbar, Container} from "react-bootstrap";
+import { Nav, Navbar, Container, NavDropdown} from "react-bootstrap";
+import { NavLink } from 'react-router-dom'
 import IconFunction from "./CartWidget";
 import { LinkContainer } from 'react-router-bootstrap';
 import cart from './images/cart.png'
@@ -15,20 +16,25 @@ export const NavBar = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <LinkContainer to="/">
-                            <Nav.Link  href="#home">Home</Nav.Link>
+                            <Nav.Link  href="#todas">Todas</Nav.Link>
                         </LinkContainer>
-                        <LinkContainer to="/">
-                            <Nav.Link href="#link">Todas</Nav.Link>
-                        </LinkContainer>
-                        <LinkContainer to="/Estrenos/id=1">
-                            <Nav.Link href="#link">Estrenos</Nav.Link>
-                        </LinkContainer>
-                        <LinkContainer to="/FAQ">
-                            <Nav.Link href="#link">Preguntas</Nav.Link>
+                            <NavDropdown title="Tipo" id="nav-dropdown">
+                                <NavDropdown.Item >
+                                    <NavLink to="/Acción">Acción</NavLink>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item >
+                                    <NavLink to="/Thriller">Thriller</NavLink>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <NavLink to="/Comedia">Comedia</NavLink>
+                                </NavDropdown.Item>
+                            </NavDropdown>                  
+                        <LinkContainer to="/Preguntas">
+                            <Nav.Link href="Preguntas" >Preguntas</Nav.Link>
                         </LinkContainer>
                         <LinkContainer to="/Cart">
                             {/* <Nav.Link href="#link">Carro <IconFunction />  </Nav.Link> */}
-                                <Navbar.Brand href="#home">
+                                <Navbar.Brand href="Cart">
                                     <img
                                     alt=""
                                     src={cart}
