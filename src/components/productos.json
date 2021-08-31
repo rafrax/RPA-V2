@@ -3,7 +3,7 @@
     "nombre": "FREE GUY: TOMANDO EL CONTROL",
     "tipo": "Comedia",
     "estilo": "TE +7",
-    "precio": "4500 CLP",
+    "precio": "4500",
     "imagen": "https://cdn.apis.cineplanet.cl/CDN/media/entity/get/FilmPosterGraphic/HO00000656?referenceScheme=HeadOffice&allowPlaceHolder=true",
     "stock": 5,
     "inicial": 1
@@ -13,7 +13,7 @@
     "nombre": "NO RESPIRES 2",
     "tipo": "Thriller",
     "estilo": "+14",
-    "precio": "4800 CLP",
+    "precio": "4800",
     "imagen": "https://cdn.apis.cineplanet.cl/CDN/media/entity/get/FilmPosterGraphic/HO00000668?referenceScheme=HeadOffice&allowPlaceHolder=true",
     "stock": 12,
     "inicial": 1
@@ -23,7 +23,7 @@
     "nombre": "BLACK WIDOW",
     "tipo": "Acción",
     "estilo": "+14",
-    "precio": "4500 CLP",
+    "precio": "4500",
     "imagen": "https://cdn.apis.cineplanet.cl/CDN/media/entity/get/FilmPosterGraphic/HO00000650?referenceScheme=HeadOffice&allowPlaceHolder=true",
     "stock": 10,
     "inicial": 1
@@ -33,7 +33,7 @@
     "nombre": "EL CONJURO 3",
     "tipo": "Thriller",
     "estilo": "+14",
-    "precio": "5500 CLP",
+    "precio": "5500",
     "imagen": "https://cdn.apis.cineplanet.cl/CDN/media/entity/get/FilmPosterGraphic/HO00000649?referenceScheme=HeadOffice&allowPlaceHolder=true",
     "stock": 20,
     "inicial": 1
@@ -43,7 +43,7 @@
     "nombre": "El ESCUADRON SUICIDA",
     "tipo": "Acción",
     "estilo": "+14",
-    "precio": "4500 CLP",
+    "precio": "4500",
     "imagen": "https://cdn.apis.cineplanet.cl/CDN/media/entity/get/FilmPosterGraphic/HO00000654?referenceScheme=HeadOffice&allowPlaceHolder=true",
     "stock": 14,
     "inicial": 1
@@ -53,7 +53,7 @@
     "nombre": "RAMBO",
     "tipo": "Acción",
     "estilo": "+14",
-    "precio": "4500 CLP",
+    "precio": "4500",
     "imagen": "https://cdn.apis.cineplanet.cl/CDN/media/entity/get/FilmPosterGraphic/HO00000506?referenceScheme=HeadOffice&allowPlaceHolder=true",
     "stock": 22,
     "inicial": 1
@@ -63,7 +63,7 @@
     "nombre": "RAPIDOS Y FURIOSOS",
     "tipo": "Acción",
     "estilo": "+14",
-    "precio": "4900 CLP",
+    "precio": "4900",
     "imagen": "https://cdn.apis.cineplanet.cl/CDN/media/entity/get/FilmPosterGraphic/HO00000626?referenceScheme=HeadOffice&allowPlaceHolder=true",
     "stock": 20,
     "inicial": 1
@@ -73,9 +73,10 @@
     "nombre": "SPACE JAM",
     "tipo": "Acción",
     "estilo": "+14",
-    "precio": "4700 CLP",
+    "precio": "4700",
     "imagen": "https://cdn.apis.cineplanet.cl/CDN/media/entity/get/FilmPosterGraphic/HO00000652?referenceScheme=HeadOffice&allowPlaceHolder=true",
     "stock": 21,
     "inicial": 1
+    
 }
 ]

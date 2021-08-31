@@ -2,10 +2,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
-h1, h2, h5 {
+h1, h2, h3, h5, h6 {
     text-align: center;
 }
 
+span {
+    font-size: small;
+    text-align: right;
+    color: blue;
+}
 
 .btnvar {
     display: flex;

@@ -1,14 +1,12 @@
-import React from 'react';
-import { Basket2 } from 'react-bootstrap-icons';
+import React, { useContext } from 'react';
+import { CartContext } from './context/CartContext';
 
-function CartWidget() {
+const CartWidget = () => {
+    const {cartSize} = useContext(CartContext);
     return (
-        <span>
-            <Basket2 color="royalblue" 
-            size="30"
-            />
-        </span>
-    );
+        <>
+        {cartSize() > 0 ? (<span>({cartSize()})</span>) : ('')}
+        </>
+    )
 }
-
 export default CartWidget;

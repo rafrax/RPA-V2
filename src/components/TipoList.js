@@ -8,11 +8,10 @@ import NavBar from './navBar';
 
 function TipoList() {
     const {tipo} = useParams();
-
     const [items, setItems] = useState([]);
     const getItems = (ab) => {
-        const selected = ListMovies.filter( (tipo) => tipo.tipo === ab)
-        setItems(selected);
+    const selected = ListMovies.filter( (tipo) => tipo.tipo === ab)
+    setItems(selected);
     }
 
     useEffect( () => {
@@ -47,5 +46,4 @@ function TipoList() {
             </div>
     );
 }
-
 export default TipoList;

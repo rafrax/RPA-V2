@@ -1,16 +1,22 @@
 import React from 'react';
 import { Nav, Navbar, Container, NavDropdown} from "react-bootstrap";
 import { NavLink } from 'react-router-dom'
-import IconFunction from "./CartWidget";
+import CartWidget from "./CartWidget";
 import { LinkContainer } from 'react-router-bootstrap';
 import cart from './images/cart.png'
+import { Basket2 } from 'react-bootstrap-icons';
+
 
 export const NavBar = () => {
     return (
         <div>
             <Navbar bg="light" expand="lg">
                 <Container>
-                    <IconFunction /> 
+                    <span>
+                        <Basket2 color="royalblue" 
+                        size="30"
+                        />
+                    </span>
                     <Navbar.Brand href="#home">OnlineMovies</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -34,15 +40,15 @@ export const NavBar = () => {
                         </LinkContainer>
                         <LinkContainer to="/Cart">
                             {/* <Nav.Link href="#link">Carro <IconFunction />  </Nav.Link> */}
-                                <Navbar.Brand href="Cart">
-                                    <img
+                            <Navbar.Brand href="Cart">
+                            <CartWidget />  <img
                                     alt=""
                                     src={cart}
                                     width="25"
                                     height="25"
                                     className="d-inline-block align-top"
                                     />{' '}
-                                Carro
+                                Carro  
                                 </Navbar.Brand>
                         </LinkContainer>
                         
