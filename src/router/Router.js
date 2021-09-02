@@ -15,7 +15,7 @@ export const Router = () => {
             <Switch>
                 <Route exact path="/" component={Todas} />
                 <Route path="/itemDetail/:id" component={ItemDetailContainer} />
-                {/* <Route exact path="/:tipo" component={TipoList} /> */}
+                <Route exact path="/:tipo" component={TipoList} />
                 <Route exact path="/Preguntas" component={Preguntas} />
                 <Route exact path="/cart" component={Cart} />
                 <Route path="*" component={Error} />
