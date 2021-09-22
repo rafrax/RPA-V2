@@ -10,9 +10,6 @@ import { getFirestore } from '../firebase';
 function TipoList() {
     const {tipo} = useParams();
     const [items, setItems] = useState([]);
-    // const getItems = (ab) => {
-    // const selected = ListMovies.filter( (tipo) => tipo.tipo === ab)
-    // setItems(selected);
     const db = getFirestore();
     const itemCollection = db.collection("items");
     const crafter = itemCollection.where("tipo", "==", tipo);

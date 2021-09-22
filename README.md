@@ -1,3 +1,26 @@
+# Web Peliculas
+
+Esta pagina busca simular un sitio para comprar y ver peliculas del cine en linea.
+
+# Navegabilidad
+
+La pagina cuenta con las siguientes opciones:
+Todas (Home)
+Tipo: filtrar por tipo de pelicula
+Preguntas: preguntas frecuentes
+Carro: para visualizar compras
+
+# Tecnologias utilizadas
+React JS
+Node
+NPM
+Firebase
+CSS
+HTML
+React-bootstrap
+Bootstrap
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

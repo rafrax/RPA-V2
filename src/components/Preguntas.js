@@ -3,23 +3,24 @@ import NavBar from './navBar';
 
 const Preguntas = () => {
     return (
-        <div>
+        <div className="container ">
             <NavBar />
             <h2>Preguntas Frecuentes</h2>
             <br></br>
-                <h5>Pregunta 1</h5>
+                <h5>¿Qué es Cine Online?</h5>
                     <p className="textPregunta">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus sem leo, ac auctor est iaculis sed. Donec sem quam, faucibus sit amet turpis vitae, fermentum gravida turpis. Aliquam mattis id risus et commodo. Vivamus mollis purus augue, a placerat mauris finibus pellentesque. Nullam et orci viverra, fermentum nisl eget, pretium lorem. Pellentesque porta odio quis orci fermentum, in pretium justo pellentesque. Suspendisse potenti. Mauris a dapibus nisi, in semper arcu. Nullam cursus urna ac mauris tincidunt, sit amet fringilla ligula iaculis.
+                    Cine Online es una colaboración entre Cinemark y Cining (una empresa BF Distribution) que presentará estrenos exclusivos, y que podrás ver en tu casa a través de un navegador web, o, de forma opcional, utilizando los dispositivos que tengas disponibles.
                     </p>
 
-                    <h5>Pregunta 1</h5>
+                    <h5>¿Cuánto tiempo tengo para ver la función?</h5>
                     <p className="textPregunta">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus sem leo, ac auctor est iaculis sed. Donec sem quam, faucibus sit amet turpis vitae, fermentum gravida turpis. Aliquam mattis id risus et commodo. Vivamus mollis purus augue, a placerat mauris finibus pellentesque. Nullam et orci viverra, fermentum nisl eget, pretium lorem. Pellentesque porta odio quis orci fermentum, in pretium justo pellentesque. Suspendisse potenti. Mauris a dapibus nisi, in semper arcu. Nullam cursus urna ac mauris tincidunt, sit amet fringilla ligula iaculis.
+                    Podrás ver tu función dentro de las siguientes 48 horas luego de la compra de tu función, y tendrás tres intentos de reproducción de la misma para una (1) visualización completa.
                     </p>
 
-                    <h5>Pregunta 1</h5>
+                    <h5>¿Cuántas personas pueden ver mi función de Cine Online?</h5>
                     <p className="textPregunta">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus sem leo, ac auctor est iaculis sed. Donec sem quam, faucibus sit amet turpis vitae, fermentum gravida turpis. Aliquam mattis id risus et commodo. Vivamus mollis purus augue, a placerat mauris finibus pellentesque. Nullam et orci viverra, fermentum nisl eget, pretium lorem. Pellentesque porta odio quis orci fermentum, in pretium justo pellentesque. Suspendisse potenti. Mauris a dapibus nisi, in semper arcu. Nullam cursus urna ac mauris tincidunt, sit amet fringilla ligula iaculis.
+                    Ya comprado tu Código de Acceso Único (PIN) tienes tres intentos para una (1) visualización completa disponibles, los que deben llevarse a cabo 48 horas después de la compra, pero puedes ver la película acompañado de quien tú quieras.
+Recuerda que, si compartes tu código con otra persona, y esa persona lo utiliza, se contabilizará como uno de los tres intentos que tienes disponibles, o la visualización completa si es que ésta es efectiva.
                     </p>
         </div>
     )

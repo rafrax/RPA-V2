@@ -1,22 +1,3 @@
-// import React from "react";
-// import { useContext } from "react";
-// import { CartContext } from "./context/CartContext";
-// import NavBar from "./navBar";
-
-// const Cart = () => {
-//     const cart = useContext(CartContext);
-//     console.log('cart', cart)
-
-//     return(
-//         <div>
-//                 <div> <NavBar /></div>
-//                 <h1>No mostrar nada</h1>
-//         </div>
-//     );
-// }
-
-// export default Cart
-
 import React from "react";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
@@ -34,42 +15,42 @@ const Cart = () => {
     const total = subtotal;
     const [orderCreatedId, setOrderCreatedId] = useState(null);
 
-    const handleFinishPurchase = () => {
-        const newItems = items.map(({ item, q }) => ({
-            item: {
-                id: item.id,
-                title: item.nombre,
-                price: item.precio,
-            },
-                cantidad: q,
-        }));
+    // const handleFinishPurchase = () => {
+    //     const newItems = items.map(({ item, q }) => ({
+    //         item: {
+    //             id: item.id,
+    //             title: item.nombre,
+    //             price: item.precio,
+    //         },
+    //             cantidad: q,
+    //     }));
 
-        const newOrder = {
-            buyer: {
-                name: "Raphael",
-                phone: "9999999",
-                email: "rapha@raphael.com",
-            },
-            items: newItems,
-            date: new Date(),
-            total,
-        };
+    //     const newOrder = {
+    //         buyer: {
+    //             name: "Raphael",
+    //             phone: "9999999",
+    //             email: "rapha@raphael.com",
+    //         },
+    //         items: newItems,
+    //         date: new Date(),
+    //         total,
+    //     };
 
-        const db = getFirestore();
-        const orders = db.collection("orders");
-        const batch = db.batch();
+    //     const db = getFirestore();
+    //     const orders = db.collection("orders");
+    //     const batch = db.batch();
         
-        orders.add(newOrder)
-        .then((response) => {
-            items.forEach(({item, q}) => {
-                const docRef = db.collection("items").doc(item.id)
-                batch.update(docRef, {stock: item.stock - q})
-            });
-            batch.commit();
-            setOrderCreatedId(response.id);
-        })
-        .catch((error) => console.log(error)); 
-    }
+    //     orders.add(newOrder)
+    //     .then((response) => {
+    //         items.forEach(({item, q}) => {
+    //             const docRef = db.collection("items").doc(item.id)
+    //             batch.update(docRef, {stock: item.stock - q})
+    //         });
+    //         batch.commit();
+    //         setOrderCreatedId(response.id);
+    //     })
+    //     .catch((error) => console.log(error)); 
+    // }
 
     return(
         <div>
@@ -134,7 +115,7 @@ const Cart = () => {
                             </div>
                             <hr></hr>
                             <div className="my-auto">
-                                <Button onClick={handleFinishPurchase} variant="success">Pagar</Button> &nbsp;
+                            <Link to="/Checkout" > <Button variant="success">Pagar</Button> </Link> &nbsp;
                                 <Link to="/" ><Button variant="primary">Volver a tienda</Button></Link>
                             </div>
 
